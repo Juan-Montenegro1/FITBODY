@@ -25,5 +25,5 @@ public class Gimnasio {
 
     private String password;
 
-    private String Locacion;
+    private String locacion;
 }
