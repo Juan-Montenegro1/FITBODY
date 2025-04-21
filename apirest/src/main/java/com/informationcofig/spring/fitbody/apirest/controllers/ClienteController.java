@@ -2,10 +2,10 @@ package com.informationcofig.spring.fitbody.apirest.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.informationcofig.spring.fitbody.apirest.usuarios.Cliente;
+import com.informationcofig.spring.fitbody.apirest.usuarios.User;
 
 import lombok.RequiredArgsConstructor;
-import com.informationcofig.spring.fitbody.apirest.service.ClienteService;
+import com.informationcofig.spring.fitbody.apirest.service.UserService;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequiredArgsConstructor
 public class ClienteController {
 
-    private final ClienteService clienteService;
+    private final UserService userService;
 
     @PostMapping
-    public void createCliente(@RequestBody Cliente cliente){
-        clienteService.createUsuario(cliente);
+    public void createCliente(@RequestBody User cliente){
+        userService.createUsuario(cliente);
     }
 }
