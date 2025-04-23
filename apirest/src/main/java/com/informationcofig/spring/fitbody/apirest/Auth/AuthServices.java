@@ -7,9 +7,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.informationcofig.spring.fitbody.apirest.jwt.JwtService;
-import com.informationcofig.spring.fitbody.apirest.repositorios.UserRepositorio;
 import com.informationcofig.spring.fitbody.apirest.usuarios.Role;
 import com.informationcofig.spring.fitbody.apirest.usuarios.User;
+import com.informationcofig.spring.fitbody.apirest.usuarios.UserRepositorio;
 
 import lombok.RequiredArgsConstructor;
 

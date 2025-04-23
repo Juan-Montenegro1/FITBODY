@@ -1,11 +1,8 @@
-package com.informationcofig.spring.fitbody.apirest.controllers;
+package com.informationcofig.spring.fitbody.apirest.usuarios;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.informationcofig.spring.fitbody.apirest.usuarios.User;
-
 import lombok.RequiredArgsConstructor;
-import com.informationcofig.spring.fitbody.apirest.service.UserService;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
