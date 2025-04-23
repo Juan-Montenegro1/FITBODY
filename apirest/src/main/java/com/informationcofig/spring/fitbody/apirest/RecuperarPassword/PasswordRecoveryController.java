@@ -35,8 +35,8 @@ public class PasswordRecoveryController {
     public ResponseEntity<String> resetPassword(@RequestParam String token, @RequestParam String newPassword) {
         boolean success = passwordRecoveryService.resetPassword(token, newPassword);
         if (!success) {
-            return ResponseEntity.badRequest().body("Token inválido o expirado");
+            return ResponseEntity.badRequest().body("Token invalido o expirado");
         }
-        return ResponseEntity.ok("Contraseña actualizada correctamente");
+        return ResponseEntity.ok("Contraseña actualizada con exito");
     }
 }
